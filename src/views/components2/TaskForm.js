@@ -1,6 +1,39 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { TaskListContext } from '../contexts/TaskListContext'
 
+const btn = {
+  margin: "10px",
+  width: "350px"
+}
+
+const addTaskBtn = {
+  minWidth: "100px",
+  backgroundColor: "#007BFF",
+  color: "#ccc",
+  border: "none",
+  fontFamily: "'Montserrat', sans-serif",
+  fontSize: "14px",
+  borderRadius: "20px",
+  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.3)",
+  outline: "none",
+  cursor: "pointer",
+}
+
+const clearBtn = {
+  width: "100px",
+  marginLeft : "5px",
+  height: "3opx",
+  backgroundColor: "#007BFF",
+  color: "#ccc",
+  border: "none",
+  fontFamily: "'Montserrat', sans-serif",
+  fontSize: "14px",
+  borderRadius: "20px",
+  boxShadow: "0 2px 5px rgba(0, 0, 0, 0.3)",
+  outline: "none",
+  cursor: "pointer",
+}
+
 const TaskForm = () => {
   const { addTask, clearList, editTask, editItem } = useContext(TaskListContext)
   const [title, setTitle] = useState('')
@@ -36,13 +69,13 @@ const TaskForm = () => {
         value={title}
         onChange={handleChange}
         required
-        className="task-input"
+        style={btn}
       />
       <div className="buttons">
-        <button type="submit" className="btn add-task-btn">
+        <button  style={addTaskBtn} type="submit" className="btn add-task-btn">
           {editItem ? 'Edit Task' : 'Add Task'}
         </button>
-        <button className="btn clear-btn" onClick={clearList}>
+        <button style={clearBtn} className="btn clear-btn" onClick={clearList}>
           Clear
         </button>
       </div>
