@@ -2,7 +2,7 @@ export default function() {
   return [
     {
       title: "Dashboard",
-      to: "/dashboard",
+      to: "/blog-overview",
       htmlBefore: '<i class="material-icons">edit</i>',
       htmlAfter: ""
     },
