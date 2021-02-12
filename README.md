@@ -63,7 +63,7 @@ A free React admin dashboard template pack featuring a modern design system <br 
 <br />
 
 ### Available Scripts
-
+<img src="/assets/preview.png" />
 ### `npm start`
 
 Runs the app in the development mode.
