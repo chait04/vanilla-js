@@ -1,8 +1,8 @@
 export default function() {
   return [
     {
-      title: "Blog Dashboard",
-      to: "/blog-overview",
+      title: "Dashboard",
+      to: "/dashboard",
       htmlBefore: '<i class="material-icons">edit</i>',
       htmlAfter: ""
     },
@@ -12,9 +12,9 @@ export default function() {
       to: "/todo",
     },
     {
-      title: "Tables",
+      title: "Meetings",
       htmlBefore: '<i class="material-icons">table_chart</i>',
-      to: "/tables",
+      to: "/meetings",
     },
   ];
 }
