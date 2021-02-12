@@ -10,7 +10,7 @@ const styling = {
 export default () => (
   <Nav navbar className="border-left flex-row">
     <div>
-      <h1 style={styling}>Google Personal Assistant</h1>
+      <h1 style={styling}>Personal Assistant</h1>
     </div>
   </Nav>
 );

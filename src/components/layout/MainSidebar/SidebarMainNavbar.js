@@ -11,7 +11,7 @@ const style = {
 function SidebarMainNavbar() {
   return (
     <div>
-      <h4 style={style}>GPA</h4>
+      <h4 style={style}>PA</h4>
     </div>
   )
 }

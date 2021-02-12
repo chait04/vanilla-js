@@ -34,6 +34,7 @@ function diff_hours(dt2, dt1) {
 const total_working_hours=9;
 
 var meetingTime=0;
+// eslint-disable-next-line
 events.map((event,i) => {
   meetingTime+=diff_hours(event.endTime,event.startTime);
 });
