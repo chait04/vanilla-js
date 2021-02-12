@@ -17,7 +17,7 @@ export default [
     component: () => <Redirect to="/blog-overview" />
   },
   {
-    path: "/blog-overview",
+    path: "/dashboard",
     layout: DefaultLayout,
     component: BlogOverview
   },
@@ -27,7 +27,7 @@ export default [
     component: Todo
   },
   {
-    path: "/tables",
+    path: "/meetings",
     layout: DefaultLayout,
     component: Tables
   },

@@ -1,12 +1,16 @@
 import React from "react";
 import { Nav } from "shards-react";
 
-import Notifications from "./Notifications";
-import UserActions from "./UserActions";
+const styling = {
+    fontSize : "40px",
+    // marginLeft : "200px",
+    color : "black",
+}
 
 export default () => (
   <Nav navbar className="border-left flex-row">
-    <Notifications />
-    <UserActions />
+    <div>
+      <h1 style={styling}>Google Personal Assistant</h1>
+    </div>
   </Nav>
 );
